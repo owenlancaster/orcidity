@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="ORCIDity : ORCIDity - timeline mashup for ORCID publications and research outputs" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>ORCIDity</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/owenlancaster/orcidity">View on GitHub</a>
+
+          <h1 id="project_title">ORCIDity</h1>
+          <h2 id="project_tagline">ORCIDity - timeline mashup for ORCID publications and research outputs</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/owenlancaster/orcidity/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/owenlancaster/orcidity/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>ORCIDity prototype developed during ORCID Hackathon, Oxford (May 23rd 2013)</h3>
+
+<p>This is a first version of the ORCIDity timeline mashup. Users can enter their ORCID iD and are presented with a timeline of their publications, with visual links to the source journal. Additional information including citation data (from ImpactStory.org) is also presented for each publication.</p>
+
+<p><a href="http://lamp-lbi-24.rcs.le.ac.uk/orcidity">Live Demo</a></p>
+
+<h3>API Components</h3>
+
+<ul>
+<li>ORCID public API (retrieving users publications)</li>
+<li>CrossRef API (for lookup of </li>
+<li>ImpactStory API</li>
+</ul><h3>Other Components</h3>
+
+<ul>
+<li>Timeline JS (<a href="http://timeline.verite.co/">http://timeline.verite.co/</a>)</li>
+<li>Codeigniter</li>
+<li>Twitter Bootstrap</li>
+<li>jQuery</li>
+</ul><h3>Install</h3>
+
+<p>You will need to allow apache to access the .htaccess file (and possibly adjust the RewriteBase to suit your directory).</p>
+
+<p>To enable ImpactStory enter your API key in the application/config/orcidity.php file.</p>
+
+<p>MySQL database may need to be created (and the connection settings entered in application/config/database.php). A dump of the database structure is available in resources/sql/orcidity.sql.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">ORCIDity maintained by <a href="https://github.com/owenlancaster">owenlancaster</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
