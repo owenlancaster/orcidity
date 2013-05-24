@@ -2,6 +2,8 @@
 
 This is a first version of the ORCIDity timeline mashup. Users can enter their ORCID iD and are presented with a timeline of their publications, with visual links to the source journal. Additional information including citation data (from ImpactStory.org) is also presented for each publication. Further development ideas and collaborations are most welcome.
 
+### Live Demo
+
 [Live Demo](http://lamp-lbi-24.rcs.le.ac.uk/orcidity)
 
 ### API Components
