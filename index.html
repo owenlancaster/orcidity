@@ -33,7 +33,7 @@
       <section id="main_content" class="inner">
         <h3>ORCIDity prototype developed during ORCID Hackathon, Oxford (May 23rd 2013)</h3>
 
-<p>This is a first version of the ORCIDity timeline mashup. Users can enter their ORCID iD and are presented with a timeline of their publications, with visual links to the source journal. Additional information including citation data (from ImpactStory.org) is also presented for each publication.</p>
+<p>This is a first version of the ORCIDity timeline mashup. Users can enter their ORCID iD and are presented with a timeline of their publications, with visual links to the source journal. Additional information including citation data (from ImpactStory.org) is also presented for each publication. Further development ideas and collaborations are most welcome.</p>
 
 <p><a href="http://lamp-lbi-24.rcs.le.ac.uk/orcidity">Live Demo</a></p>
 
@@ -41,8 +41,8 @@
 
 <ul>
 <li>ORCID public API (retrieving users publications)</li>
-<li>CrossRef API (for lookup of </li>
-<li>ImpactStory API</li>
+<li>CrossRef API (for lookup of publication details)</li>
+<li>ImpactStory API (fetch citation information)</li>
 </ul><h3>Other Components</h3>
 
 <ul>
@@ -52,9 +52,9 @@
 <li>jQuery</li>
 </ul><h3>Install</h3>
 
-<p>You will need to allow apache to access the .htaccess file (and possibly adjust the RewriteBase to suit your directory).</p>
+<p>You will need to set "AllowOverride All" in your apache config in order to allow access the .htaccess file (and possibly adjust the RewriteBase in the .htaccess file to suit your web directory).</p>
 
-<p>To enable ImpactStory enter your API key in the application/config/orcidity.php file.</p>
+<p>To enable ImpactStory citations enter your API key in the application/config/orcidity.php file.</p>
 
 <p>MySQL database may need to be created (and the connection settings entered in application/config/database.php). A dump of the database structure is available in resources/sql/orcidity.sql.</p>
       </section>
