@@ -39,18 +39,19 @@
 				</thead>
 				<tbody>				
 			<?php
-			foreach ( $doi_dates as $date ) {
-				if ( $date['title'] != "" ) {
-					print "<tr>";
-					print "<td>" . $date['doi'] . "</td>";
-					print "<td>" . $date['title'] . "</td>";
-					print "<td>" . $date['year'] . "</td>";
-					print "<td>" . $date['link'] . "</td>";
-					print '<td><div class="impactstory-embed" data-id="' . $date['doi'] . '" data-show-logo="false" data-verbose-badges="true" data-id-type="doi" data-api-key="' . $this->config->item('impactstory-api-key') . '"></div></td>';
-					print "</tr>";
-				}
+			foreach ( $doi_dates as $date ):
+				if ( $date['title'] != "" ): ?>
+					<tr>
+						<td><?php echo $date['doi']; ?></td>
+						<td><?php echo $date['title']; ?></td>
+						<td><?php echo $date['year']; ?></td>
+						<td><a href="<?php echo $date['link']; ?>"><?php echo $date['journal_title']; ?></a></td>
+						<td><div class="impactstory-embed" data-id="<?php echo $date['doi']; ?>" data-show-logo="false" data-verbose-badges="true" data-id-type="doi" data-api-key="<?php echo $this->config->item('impactstory-api-key'); ?>"></div></td>
+					</tr>
+				<?php
+				endif;
 //				print_r($date);
-			}
+			endforeach;
 			?>
 				</tbody>
 			</table>

@@ -13,6 +13,17 @@
 			</form>
 		</div>
 	</div>
-
+	<br />
+	<div class="row">
+		<div class="span12 pagination-centered">
+			<p>Enter your ORCID (register <a href="https://orcid.org/register" target="_blank">here</a>) in the box below to view your publication timeline and citation information.</p>
+			<br/><br/>
+			<hr>
+			<div class="well">
+				<p>ORCIDity is a project developed during the <a href="http://www.hackathon.io/orcid/">ORCID CodeFest</a> in Oxford on 23rd June 2013</p>
+				<p>Source code and further information is <a href="http://owenlancaster.github.io/orcidity/">available here</a>.</p>
+			</div>
+		</div>
+	</div>
 </div>
 

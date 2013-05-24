@@ -12,6 +12,7 @@ class CrossRef {
 		$day = $crossref_xml->{'doi_record'}->{'crossref'}->{'journal'}->{'journal_issue'}->{'publication_date'}->{'day'};
 		$link = $crossref_xml->{'doi_record'}->{'crossref'}->{'journal'}->{'journal_article'}->{'doi_data'}->{'resource'};
 		$title = $crossref_xml->{'doi_record'}->{'crossref'}->{'journal'}->{'journal_article'}->{'titles'}->{'title'};
+		$journal_title = $crossref_xml->{'doi_record'}->{'crossref'}->{'journal'}->{'journal_metadata'}->{'full_title'};
 		$timestamp = $crossref_xml->{'doi_record'}->{'crossref'}->{'journal'}->{'journal_article'}->{'doi_data'}->{'timestamp'};
 //		print "$year $month $day<br />";
 		$publication_dates['doi'] = $doi;
@@ -20,6 +21,7 @@ class CrossRef {
 		$publication_dates['day'] = (string) $day;
 		$publication_dates['link'] = (string) $link;
 		$publication_dates['title'] = (string) $title;
+		$publication_dates['journal_title'] = (string) $journal_title;
 		return $publication_dates;
 		
 	}
