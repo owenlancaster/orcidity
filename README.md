@@ -4,7 +4,7 @@ This is a first version of the ORCIDity timeline mashup. Users can enter their O
 
 ### Live Demo
 
-[Live Demo](http://lamp-lbi-24.rcs.le.ac.uk/orcidity)
+[Live Demo](http://143.210.56.154/orcidity)
 
 ### API Components
 * ORCID public API (retrieving users publications)
