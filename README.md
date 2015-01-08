@@ -1,3 +1,5 @@
+### **** ImpactStory API has gone commercial so the demo no longer works ****
+
 ### ORCIDity prototype developed during ORCID Hackathon, Oxford (May 23rd 2013)
 
 This is a first version of the ORCIDity timeline mashup. Users can enter their ORCID iD and are presented with a timeline of their publications, with visual links to the source journal. Additional information including citation data (from ImpactStory.org) is also presented for each publication. Further development ideas and collaborations are most welcome.
